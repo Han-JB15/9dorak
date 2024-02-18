@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="net.firstzone.wallet">
+
+	<select id="selectAllBasket" resultType="basketvo">
+		select * from basket
+	</select>
+
+	<select id="selectAllPay" resultType="payvo">
+		select * from pay order by order_no
+	</select>
+
+	<select id="selectPay" resultType="payvo">
+		select * from pay where
+		order_no=#{order_no}
+	</select>
+
+	<update id="updateSales" parameterType="payvo">
+		update pay set
+		pay_status=#{pay_status}, pay_date=#{pay_date},
+		pay_method=#{pay_method},
+		pay_price=#{pay_price}, pay_depo=#{pay_depo},
+		pay_depoprice=#{pay_depoprice},
+		pay_depobank=#{pay_depobank},
+		imp_uid=#{imp_uid}
+		where order_no=#{order_no}
+	</update>
+
+	<delete id="deleteSales" parameterType="payvo">
+		delete from pay where
+		order_no=#{order_no}
+	</delete>
+	
+	<!-- 결제 완료 뒤, 장바구니 삭제 -->
+	<delete id="deleteBasketAfterPay" parameterType="basketvo">
+		delete from basket where
+		order_no=#{order_no}
+	</delete>
+
+	<!-- 장바구니 목록 -->
+	<select id="getBasket" resultType="basketvo">
+		select b.basket_pro_count,
+		p.pro_name, p.pro_price
+		from basket b join pro p on p.pro_no = b.pro_no
+		where mem_id=#{mem_id} order by b.pro_no
+	</select>
+
+	<!-- 1 상품의 사진 이미지 1개만 가져오기 -->
+	<select id="getProImage" parameterType="String">
+		<![CDATA[ select proimage_image from proimage where pro_no=#{pro_no} and rownum <= 1 ]]>
+	</select>
+
+	<!-- 장바구니 삭제 -->
+	<delete id="deleteBasket" parameterType="basketvo">
+		delete from basket where
+		mem_id=#{mem_id} and pro_no=#{pro_no}
+	</delete>
+	
+	<delete id="deleteBasketPay" parameterType="basketvo">
+		delete from basket where
+		mem_id=#{mem_id} and pro_no=#{pro_no}
+	</delete>
+
+	<!-- 장바구니 수량 수정 -->
+	<update id="updateBasket" parameterType="basketvo">
+		update basket set
+		basket_pro_count=#{basket_pro_count}, basket_date=sysdate
+		where
+		mem_id=#{mem_id} and pro_no=#{pro_no}
+	</update>
+
+	<!-- 상품리뷰 맵 -->
+	<resultMap type="HashMap" id="basketMap">
+		<id column="mem_name" property="mem_name" />
+		<id column="pro_no" property="pro_no" />
+		<id column="pro_name" property="pro_name" />
+		<id column="basket_pro_count" property="basket_pro_count" />
+		<id column="pro_price" property="pro_price" />
+		<id column="basket_date" property="basket_date" javaType="java.lang.String" />
+		<id column="proimage_image" property="proimage_image" />
+		<id column="mem_id" property="mem_id" />
+		<id column="pro_sc" property="pro_sc" />
+	</resultMap>
+
+	<!-- 지인 존재 여부 검색 -->
+	<select id="peopleCheck" parameterType="String"
+		resultType="peoplevo">
+		select mem_id2 from people where mem_id=#{mem_id}
+	</select>
+
+	<!-- 지인 있을 때 장바구니 목록 조회 -->
+	<select id="peopleBasket" parameterType="String"
+		resultMap="basketMap">
+		with ranked_proimages as (
+		select m.mem_id, m.mem_name,
+		b.pro_no, p.pro_name, b.basket_pro_count, p.pro_price, p.pro_sc,
+		to_char(b.basket_date, 'yyyy"년 "mm"월 "dd"일"') basket_date,
+		i.proimage_image, row_number() over (partition by m.mem_name, b.pro_no
+		order by i.proimage_image) as image_rank
+		from mem m
+		join basket b on
+		m.mem_id = b.mem_id
+		join pro p on b.pro_no = p.pro_no
+		join proimage i on
+		p.pro_no = i.pro_no
+		where m.mem_id in (select pe.mem_id2 from people pe
+		join mem m on
+		pe.mem_id=m.mem_id where m.mem_id=#{mem_id})
+		)
+		select
+		mem_name, pro_no, pro_name, basket_pro_count, pro_price, basket_date,
+		proimage_image, mem_id, pro_sc
+		from ranked_proimages
+		where image_rank=1
+		order by
+		basket_date desc
+	</select>
+
+	<!-- 지인 없을 때 장바구니 목록 조회 -->
+	<select id="noPeopleBasket" parameterType="String"
+		resultMap="basketMap">
+		with ranked_proimages as (
+		select m.mem_id, m.mem_name,
+		b.pro_no, p.pro_name, b.basket_pro_count, p.pro_price, p.pro_sc,
+		to_char(b.basket_date, 'yyyy"년 "mm"월 "dd"일"') basket_date,
+		i.proimage_image, row_number() over (partition by m.mem_name, b.pro_no
+		order by i.proimage_image) as image_rank
+		from mem m
+		join basket b on
+		m.mem_id = b.mem_id
+		join pro p on b.pro_no = p.pro_no
+		join proimage i on
+		p.pro_no = i.pro_no
+		where m.mem_id=#{mem_id}
+		)
+		select mem_name, pro_no,
+		pro_name, basket_pro_count, pro_price, basket_date, proimage_image,
+		mem_id, pro_sc
+		from ranked_proimages
+		where image_rank = 1
+		order by
+		basket_date
+		desc
+	</select>
+
+	<!-- 나랑 지인 전부 합친 장바구니 목록 -->
+	<select id="allPeopleBasket" parameterType="String" resultMap="basketMap">
+		with ranked_proimages as (
+		select m.mem_id, m.mem_name,
+		b.pro_no, p.pro_name, b.basket_pro_count, p.pro_price, p.pro_sc,
+		to_char(b.basket_date, 'yyyy"년 "mm"월 "dd"일"') basket_date,
+		i.proimage_image, row_number() over (partition by m.mem_name, b.pro_no
+		order by i.proimage_image) as image_rank
+		from mem m
+		join basket b on
+		m.mem_id = b.mem_id
+		join pro p on b.pro_no = p.pro_no
+		join proimage i on
+		p.pro_no = i.pro_no
+		where m.mem_id in (select pe.mem_id2 from people pe
+		join mem m on pe.mem_id=m.mem_id
+		where m.mem_id=#{mem_id}) or
+		m.mem_id=#{mem_id}
+		)
+		select mem_name, pro_no, pro_name,
+		basket_pro_count, pro_price, basket_date, proimage_image, mem_id,
+		pro_sc
+		from ranked_proimages
+		where image_rank=1
+		order by basket_date desc
+	</select>
+
+	<!-- 회원 아이디 정보 -->
+	<select id="checkMember" parameterType="String"
+		resultType="memvo">
+		select * from mem where mem_id=#{mem_id}
+	</select>
+
+	<!-- 아이디+상품 장바구니 존재 여부 확인 -->
+	<select id="checkBasket" resultType="basketvo">
+		select * from basket where
+		mem_id=#{mem_id} and pro_no=#{pro_no}
+	</select>
+
+	<!-- 장바구니 담기 -->
+	<insert id="addBasket" parameterType="basketvo">
+		insert into basket (pro_no,
+		basket_date, basket_pro_count, mem_id) values (#{pro_no},
+		sysdate,
+		#{basket_pro_count}, #{mem_id})
+	</insert>
+
+	<!-- 빈 장바구니 -->
+	<select id="emptyBasket" resultType="basketvo">
+		select * from basket where
+		mem_id in (select mem_id2 from people where mem_id=#{mem_id})
+		union
+		select * from basket where mem_id=#{mem_id}
+	</select>
+
+	<select id="getOrderList" resultType="ordervo"
+		parameterType="int">
+		SELECT
+		O.order_no,
+		OD.orderdetail_count,
+		P.pro_no,
+		P.pro_name,
+		P.pro_price
+		FROM
+		ORDERS O
+		JOIN
+		ORDERDETAIL OD ON O.ORDER_NO = OD.ORDER_NO
+		JOIN
+		PRO P ON OD.PRO_NO = P.PRO_NO
+		WHERE
+		O.ORDER_NO = #{order_no}
+	</select>
+
+	<insert id="insertOrder" parameterType="ordervo">
+		insert into orders values
+		( orders_seq.nextval, sysdate, #{order_price}, '주문 접수', '', #{mem_id})
+	</insert>
+
+	<select id="selectOrderNum" resultType="int">
+		select order_no from
+		orders where rownum=1 order by order_no desc
+	</select>
+
+	<insert id="insertOrderDetail" parameterType="orderdetailvo">
+		insert into
+		orderdetail (order_no, pro_no, orderdetail_count) values (#{order_no},
+		#{pro_no}, #{orderdetail_count})
+	</insert>
+
+</mapper>

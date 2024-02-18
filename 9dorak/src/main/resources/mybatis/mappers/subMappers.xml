@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="net.firstzone.sub">
+
+	<select id="selectAll" resultType="subvo">
+		select * from sub
+	</select>
+	
+	<select id="selectAllSub9A" resultType="provo">
+		select * from pro where pro_sub9 = 'A'
+	</select>
+	
+	<select id="selectAllSub9B" resultType="provo">
+		select * from pro where pro_sub9 = 'B'
+	</select>
+	
+	<select id="selectAllSub19A" resultType="provo">
+		select * from pro where pro_sub19 = 'A'
+	</select>
+	
+	<select id="selectAllSub19B" resultType="provo">
+		select * from pro where pro_sub19 = 'B'
+	</select>
+
+
+
+
+
+
+
+	
+	
+	<insert id="insertSub" parameterType="subvo">
+		insert into sub values (sub_seq.nextval, #{sub_extend}, sysdate, #{mem_id})
+	</insert>
+	
+	<select id="selectSubNum" resultType="int">
+		select sub_no from sub where rownum=1 order by sub_no desc
+	</select>
+	
+	<select id="selectSubNo" resultType="subvo">
+		select * from sub where sub_no=#{sub_no}
+	</select>
+	
+	<update id="updateSub" parameterType="subvo">
+		update sub set sub_extend=#{sub_extend}, sub_date=#{sub_date}, mem_id=#{mem_id} where sub_no=#{sub_no}
+	</update>
+	
+	<delete id="deleteSub" parameterType="int">
+		delete from sub where sub_no=#{sub_no}
+	</delete>
+
+</mapper>

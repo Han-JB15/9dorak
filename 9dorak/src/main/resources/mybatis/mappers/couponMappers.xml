@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="net.firstzone.coupon">
+
+	<select id="selectAll" resultType="couponvo">
+		select * from coupon
+	</select>
+
+	<select id="selectDistinctCoupon" resultType="couponvo">
+		select distinct
+		coupon_name from coupon
+	</select>
+
+	<insert id="insertCoupon" parameterType="couponvo">
+		insert into
+		coupon values
+		(coupon_seq.nextval,
+		#{coupon_check}, #{coupon_name},
+		#{coupon_reg},
+		#{mem_id})
+	</insert>
+
+	<delete id="deleteCouponName" parameterType="String">
+		delete from coupon where coupon_name=#{coupon_name}
+	</delete>
+
+	<delete id="deleteCoupons" parameterType="java.util.List">
+		DELETE FROM coupon WHERE coupon_code IN
+		<foreach collection="list" item="item" open="(" separator=","
+			close=")">
+			#{item}
+		</foreach>
+	</delete>
+
+</mapper>

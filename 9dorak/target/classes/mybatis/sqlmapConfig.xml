@@ -8,10 +8,30 @@
 		<setting name="jdbcTypeForNull" value="NULL" />
 	</settings>
 	<typeAliases>
-		<typeAlias type="com.shinhan.dto.DeptVO" alias="deptvo" />
-		<typeAlias type="com.shinhan.dto.EmpVO" alias="empvo" />
-		<typeAlias type="com.shinhan.dto.JobVO" alias="jobvo" />
-		<typeAlias type="com.shinhan.dto.BoardVO" alias="boardvo" />
+		<typeAlias type="com.shinhan.dto.MemVO" alias="memvo" />
+		<typeAlias type="com.shinhan.dto.DoranVO" alias="doranvo" />
+		<typeAlias type="com.shinhan.dto.ProVO" alias="provo" />
+		<typeAlias type="com.shinhan.dto.CommentVO" alias="commentvo" />
+		<typeAlias type="com.shinhan.dto.DoranlikeVO" alias="doranlikevo" />
+		<typeAlias type="com.shinhan.dto.DlikeVO" alias="dlikevo" />
+		<typeAlias type="com.shinhan.dto.ChallengeVO" alias="challengevo" />
+		<typeAlias type="com.shinhan.dto.ChalllikeVO" alias="challlikevo" />
+		<typeAlias type="com.shinhan.dto.EventVO" alias="eventvo" />
+		<typeAlias type="com.shinhan.dto.MemDeliveryVO" alias="MemDeliveryvo" />
+		<typeAlias type="com.shinhan.dto.MemreviewVO" alias="memreviewvo" />
+		<typeAlias type="com.shinhan.dto.AnnoVO" alias="annovo" />
+		<typeAlias type="com.shinhan.dto.FaqVO" alias="faqvo" />
+		<typeAlias type="com.shinhan.dto.OneaskVO" alias="oneaskvo" />
+		<typeAlias type="com.shinhan.dto.SubVO" alias="subvo" />
+		<typeAlias type="com.shinhan.dto.SubdetailVO" alias="subdetailvo" />
+		<typeAlias type="com.shinhan.dto.BasketVO" alias="basketvo" />
+		<typeAlias type="com.shinhan.dto.PayVO" alias="payvo" />
+		<typeAlias type="com.shinhan.dto.CouponVO" alias="couponvo" />
+		<typeAlias type="com.shinhan.dto.OrderVO" alias="ordervo" />
+		<typeAlias type="com.shinhan.dto.ProimageVO" alias="proimagevo" />
+		<typeAlias type="com.shinhan.dto.DeliveryVO" alias="deliveryvo" />
+		<typeAlias type="com.shinhan.dto.EarnpointVO" alias="earnpointvo" />
+
 	</typeAliases>
 </configuration>
 

@@ -1,0 +1,961 @@
+@charset "UTF-8";
+
+.2099_2373 {
+	overflow: hidden;
+}
+
+.e2099_2373 {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.e2099_2463 {
+	background-color: rgba(254.2806226015091, 137.48113721609116, 29.666072130203247,
+		0.6100000143051147);
+	width: 214px;
+	height: 300%;
+	position: absolute;
+	left: -1px;
+	top: 0px;
+}
+
+.e2099_2467 {
+	width: 114px;
+	height: 34px;
+	position: absolute;
+	left: 50px;
+	top: 31px;
+	background-image: url(../images/admin/admin01.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.e2099_2469 {
+	color: rgba(255, 255, 255, 1);
+	width: max-content;
+	height: 16px;
+	position: absolute;
+	left: 80px;
+	top: 200px;
+	/* font-family: Poppins; */
+	text-align: center;
+	font-size: 16px;
+	letter-spacing: 2;
+	cursor: pointer;
+}
+
+.e2101_2491 {
+	transform: rotate(89.9999998114392deg);
+	width: 16px;
+	height: 1px;
+	left: 112px;
+	top: -14px;
+	background-image: url(../images/admin/admin03.png);
+	position: relative;
+}
+
+.2101_2491 {
+	border: 1px solid rgba(255, 255, 255, 1);
+}
+
+.e2099_2477 {
+	position: relative;
+	color: rgba(255, 255, 255, 1);
+	width: 51px;
+	height: 16px;
+	left: 73px;
+	top: -4px;
+	/* font-family: Poppins; */
+	text-align: center;
+	font-size: 15px;
+	letter-spacing: 2;
+	cursor: pointer;
+}
+
+.e2099_2478 {
+	position: relative;
+	width: 40px;
+	height: 40px;
+	left: 25px;
+	top: 25px;
+	/* border: solid 1px black; */
+	background-image: url(../images/admin/admin02.png);
+}
+
+.e2099_2470 {
+	color: rgba(255, 255, 255, 1);
+	width: max-content;
+	height: 16px;
+	position: absolute;
+	left: 80px;
+	top: 266px;
+	/* font-family: Poppins; */
+	text-align: center;
+	font-size: 16px;
+	letter-spacing: 2;
+	cursor: pointer;
+}
+
+.e2099_2472 {
+	color: rgba(255, 255, 255, 1);
+	width: max-content;
+	height: 16px;
+	position: absolute;
+	left: 80px;
+	top: 331px;
+	/* font-family: Poppins; */
+	text-align: center;
+	font-size: 16px;
+	letter-spacing: 2;
+	cursor: pointer;
+}
+
+.e2099_2473 {
+	color: rgba(255, 255, 255, 1);
+	width: max-content;
+	height: 16px;
+	position: absolute;
+	left: 74px;
+	top: 396px;
+	/* font-family: Poppins; */
+	text-align: center;
+	font-size: 16px;
+	letter-spacing: 2;
+	cursor: pointer;
+}
+
+.e2099_2474 {
+	color: rgba(255, 255, 255, 1);
+	width: max-content;
+	height: 16px;
+	position: absolute;
+	left: 74px;
+	top: 461px;
+	/* font-family: Poppins; */
+	text-align: center;
+	font-size: 16px;
+	letter-spacing: 2;
+	cursor: pointer;
+}
+
+.e2099_2475 {
+	color: rgba(255, 255, 255, 1);
+	width: 124px;
+	height: 16px;
+	position: absolute;
+	left: 45px;
+	top: 526px;
+	/* font-family: Poppins; */
+	text-align: center;
+	font-size: 16px;
+	letter-spacing: 2;
+	cursor: pointer;
+}
+
+.e2101_2490 {
+	color: rgba(255, 255, 255, 1);
+	width: 62px;
+	height: 16px;
+	left: 129px;
+	top: -24px;
+	/* font-family: Poppins; */
+	text-align: center;
+	font-size: 15px;
+	letter-spacing: 2;
+	cursor: pointer;
+	position: relative;
+	text-decoration: none;
+}
+
+.e2099_2471 {
+	transform: rotate(0deg);
+	width: 142.0093536376953px;
+	height: 0px;
+	position: absolute;
+	left: 0px;
+	top: 84px;
+}
+
+.2099_2471 {
+	border: 1px solid
+		rgba(213.90561550855637, 212.12307035923004, 212.12307035923004, 1);
+}
+
+.2099_2476 {
+	border: 1px solid
+		rgba(213.90561550855637, 212.12307035923004, 212.12307035923004, 1);
+}
+
+.e2099_2476 {
+	width: 214.00001525878906px;
+	height: 0px;
+	/* position: absolute; */
+	left: -1px;
+	top: 854px;
+}
+
+.e2099_2483 {
+	background-color: rgba(254.9889501929283, 133.50080519914627, 65.16375213861465, 1);
+	width: 142px;
+	height: 36px;
+	position: absolute;
+	left: 35px;
+	top: 127px;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+}
+
+.e2099_2468 {
+	color: rgba(255, 255, 255, 1);
+	width: max-content;
+	height: 16px;
+	position: absolute;
+	left: 80px;
+	top: 136px;
+	/* font-family: Poppins; */
+	text-align: center;
+	font-size: 16px;
+	letter-spacing: 2;
+	cursor: pointer;
+}
+
+.e2099_2485 {
+	background-color: rgba(254.00000005960464, 183.00000429153442, 117.00000062584877, 1);
+	width: 150%;
+	height: 52px;
+	position: absolute;
+	left: 203px;
+	top: 0px;
+}
+
+.e2099_2486 {
+	background-color: rgba(255, 255, 255, 1);
+	width: 150%;
+	height: 300%;
+	position: absolute;
+	left: 208px;
+	top: 43px;
+	border-radius: Symbol(figma.mixed) px;
+	border-radius: 20px 0 0 0;
+}
+
+.e2099_2487 {
+	position: relative;
+	left: 103px;
+	top: 43px;
+	width: 2px;
+	height: 2px;
+}
+
+.e2099_2471 hr {
+	border-color: white; /* 회색 색상 */
+	width: 240px; /* 원하는 너비 */
+}
+
+.e2099_2476 hr {
+	border-color: white; /* 회색 색상 */
+	width: 240px; /* 원하는 너비 */
+}
+
+.admin_login {
+	position: absolute;
+	width: 205px;
+	height: 100px;
+	left: 0%;
+	margin-top: 650px;
+	/* bottom: 100%; */
+	/* border: solid 1px black; */
+}
+
+.e2099_2490 {
+	position: relative;
+	left: -23px;
+	width: 202px;
+	top: 69px;
+	/* border: solid 1px rgba(244, 140, 40, 1); */
+	pa-left: 11px;
+	padding: 5px 20px 20px 20px;
+}
+
+.e2099_2491 {
+	position: relative;
+	left: -23px;
+	width: 202px;
+	top: -65px;
+	/* border: solid 1px rgba(244, 140, 40, 1); */
+	pa-left: 11px;
+	padding: 5px 20px 20px 20px;
+}
+
+.e2099_2492 {
+    position: relative;
+    left: -23px;
+    width: 202px;
+    top: -90px;
+    /* border: solid 1px rgba(244, 140, 40, 1); */
+    pa-left: 11px;
+    padding: 5px 20px 20px 20px;
+}
+
+.insert_memu {
+	position: relative;
+	background-color: #f48e28;
+	border-radius: 10px;
+	box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+	font-size: 16px;
+	color: white;
+	margin-right: 15px;
+	cursor: pointer;
+	width: 123px;
+	height: 45px;
+	top: -674px;
+	left: 58px;
+	border: black;
+}
+
+.e2099_3000 {
+    position: relative;
+    left: 884px;
+    top: 1415px;
+}
+
+.e3001 {
+	position: relative;
+	left: -8px;
+	height: 30px;
+	width: 30px;
+	top: -76px;
+	background-image: url(../images/admin/admin05.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	/* border: 1px solid black; */
+}
+
+.e3000_1 {
+	position: relative;
+	left: 29px;
+	top: -117px;
+}
+
+.e3000_1 input:hover {
+	border-color: orange; /* 마우스 호버 시 테두리 색상 변경 */
+}
+
+.e3002 {
+	position: relative;
+	left: -8px;
+	height: 30px;
+	width: 30px;
+	top: 0px;
+	background-image: url(../images/admin/admin06.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	/* border: 1px solid black; */
+}
+
+.e3000_2 {
+	position: relative;
+	left: -2px;
+	top: -70px;
+}
+
+.e3000_2 input {
+	padding: 10px;
+	width: 200px;
+	border-radius: 8px;
+	outline: gray;
+	border: 2px solid #b6b6b6;
+}
+
+.e3000_2 input:hover {
+	border-color: orange; /* 마우스 호버 시 테두리 색상 변경 */
+}
+
+.e3003 {
+	position: relative;
+	left: -8px;
+	height: 30px;
+	width: 30px;
+	top: -313px;
+	background-image: url(../images/admin/admin07.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	/* border: 1px solid black; */
+}
+
+.e3000_3 {
+	position: relative;
+	left: -2px;
+	top: -115px;
+}
+
+.e3000_3 b {
+            color: gray; /* Change the text color to gray */
+}
+
+.e3000_3 input {
+	padding: 10px;
+	width: 200px;
+	border-radius: 8px;
+	outline: gray;
+	border: 2px solid #b6b6b6;
+}
+
+.e3000_3 input[type="text"] {
+            margin-top: 5px; /* Add 5px top margin */
+}
+
+.e3000_3 input:hover {
+	border-color: orange; /* 마우스 호버 시 테두리 색상 변경 */
+}
+
+.e3000_4 {
+	position: relative;
+	left: 247px;
+	top: -179.6px;
+}
+
+.e3000_4 input {
+	padding: 10px;
+	width: 695px;
+	border-radius: 8px;
+	outline: gray;
+	border: 2px solid #b6b6b6;
+}
+
+.e3000_4 input:hover {
+	border-color: orange; /* 마우스 호버 시 테두리 색상 변경 */
+}
+
+.e3000_4 b {
+            color: gray; /* Change the text color to gray */
+}
+
+.e3000_4 input[type="text"] {
+            margin-top: 5px; /* Add 5px top margin */
+}
+
+.e3000_5 {
+	position: relative;
+	left: -3px;
+	top: -163.5px;
+}
+
+.e3000_5 input {
+	padding: 10px;
+	width: 200px;
+	border-radius: 8px;
+	outline: gray;
+	border: 2px solid #b6b6b6;
+}
+
+.e3000_5 input:hover {
+	border-color: orange; /* 마우스 호버 시 테두리 색상 변경 */
+}
+
+.e3000_5 b {
+            color: gray; /* Change the text color to gray */
+}
+
+.e3000_5 input[type="text"] {
+            margin-top: 5px; /* Add 5px top margin */
+}
+
+.e3000_6 {
+	position: relative;
+	left: 496px;
+	top: -234.5px;
+}
+
+.e3000_6 input {
+	padding: 10px;
+	width: 200px;
+	border-radius: 8px;
+	outline: gray;
+	border: 2px solid #b6b6b6;
+}
+
+.e3000_6 input:hover {
+	border-color: orange; /* 마우스 호버 시 테두리 색상 변경 */
+}
+
+.e3000_6 b {
+            color: gray; /* Change the text color to gray */
+}
+
+.e3000_6 input[type="text"] {
+            margin-top: 5px; /* Add 5px top margin */
+}
+
+.e3000_7 {
+	position: relative;
+	left: 742px;
+	top: -293.6px;
+}
+
+.e3000_7 input {
+	padding: 10px;
+	width: 200px;
+	border-radius: 8px;
+	outline: gray;
+	border: 2px solid #b6b6b6;
+}
+
+.e3000_7 input:hover {
+	border-color: orange; /* 마우스 호버 시 테두리 색상 변경 */
+}
+
+.e3000_7 b {
+            color: gray; /* Change the text color to gray */
+}
+
+.e3000_7 input[type="text"] {
+            margin-top: 5px; /* Add 5px top margin */
+}
+
+.e3000_8 {
+	position: relative;
+	left: 27px;
+	top: -40px;
+}
+
+.e3000_9 {
+	position: relative;
+	left: -2px;
+	top: -36px;
+}
+
+.e3000_9 input {
+	padding: 10px;
+	width: 200px;
+	border-radius: 8px;
+	outline: gray;
+	border: 2px solid #b6b6b6;
+}
+
+.e3000_9 input:hover {
+	border-color: orange; /* 마우스 호버 시 테두리 색상 변경 */
+}
+
+.e3000_9 b {
+            color: gray; /* Change the text color to gray */
+}
+
+.e3000_9 input[type="text"] {
+            margin-top: 5px; /* Add 5px top margin */
+}
+
+.e3000_10 {
+	position: relative;
+	left: 249px;
+	top: -100px;
+}
+
+.e3000_10 input {
+	padding: 10px;
+	width: 200px;
+	border-radius: 8px;
+	outline: gray;
+	border: 2px solid #b6b6b6;
+}
+
+.e3000_10 input:hover {
+	border-color: orange; /* 마우스 호버 시 테두리 색상 변경 */
+}
+
+.e3000_10 b {
+            color: gray; /* Change the text color to gray */
+}
+
+.e3000_10 input[type="text"] {
+            margin-top: 5px; /* Add 5px top margin */
+}
+
+.e3000_11 {
+	position: relative;
+	left: 497px;
+	top: -164.1px;
+}
+
+.e3000_11 input {
+	padding: 10px;
+	width: 200px;
+	border-radius: 8px;
+	outline: gray;
+	border: 2px solid #b6b6b6;
+}
+
+.e3000_11 input:hover {
+	border-color: orange; /* 마우스 호버 시 테두리 색상 변경 */
+}
+
+.e3000_11 b {
+            color: gray; /* Change the text color to gray */
+}
+
+.e3000_11 input[type="text"] {
+            margin-top: 5px; /* Add 5px top margin */
+}
+
+.e3000_12 {
+	position: relative;
+	left: 742px;
+	top: -228.2px;
+}
+
+.e3000_12 input {
+	padding: 10px;
+	width: 200px;
+	border-radius: 8px;
+	outline: gray;
+	border: 2px solid #b6b6b6;
+}
+
+.e3000_12 input:hover {
+	border-color: orange; /* 마우스 호버 시 테두리 색상 변경 */
+}
+
+.e3000_12 b {
+            color: gray; /* Change the text color to gray */
+}
+
+.e3000_12 input[type="text"] {
+            margin-top: 5px; /* Add 5px top margin */
+}
+
+.e3000_13 {
+	position: relative;
+	left: -2px;
+	top: -197px;
+}
+
+.e3000_13 input {
+	padding: 10px;
+	width: 200px;
+	border-radius: 8px;
+	outline: gray;
+	border: 2px solid #b6b6b6;
+}
+
+.e3000_13 input:hover {
+	border-color: orange; /* 마우스 호버 시 테두리 색상 변경 */
+}
+
+.e3000_13 b {
+            color: gray; /* Change the text color to gray */
+}
+
+.e3000_13 input[type="text"] {
+            margin-top: 5px; /* Add 5px top margin */
+}
+
+.e3000_14 {
+	position: relative;
+	left: 249px;
+	top: -260.6px;
+}
+
+.e3000_14 input {
+	padding: 10px;
+	width: 200px;
+	border-radius: 8px;
+	outline: gray;
+	border: 2px solid #b6b6b6;
+}
+
+.e3000_14 input:hover {
+	border-color: orange; /* 마우스 호버 시 테두리 색상 변경 */
+}
+
+.e3000_14 b {
+            color: gray; /* Change the text color to gray */
+}
+
+.e3000_14 input[type="text"] {
+            margin-top: 5px; /* Add 5px top margin */
+}
+
+.e3000_15 {
+	position: relative;
+	left: 497px;
+	top: -324.6px;
+}
+
+.e3000_15 input {
+	padding: 10px;
+	width: 200px;
+	border-radius: 8px;
+	outline: gray;
+	border: 2px solid #b6b6b6;
+}
+
+.e3000_15 input:hover {
+	border-color: orange; /* 마우스 호버 시 테두리 색상 변경 */
+}
+
+.e3000_15 b {
+            color: gray; /* Change the text color to gray */
+}
+
+.e3000_15 input[type="text"] {
+            margin-top: 5px; /* Add 5px top margin */
+}
+
+.e3000_16 {
+	position: relative;
+	left: 741px;
+	top: -389px;
+}
+
+.e3000_16 input {
+	padding: 10px;
+	width: 200px;
+	border-radius: 8px;
+	outline: gray;
+	border: 2px solid #b6b6b6;
+}
+
+.e3000_16 input:hover {
+	border-color: orange; /* 마우스 호버 시 테두리 색상 변경 */
+}
+
+.e3000_16 b {
+            color: gray; /* Change the text color to gray */
+}
+
+.e3000_16 input[type="text"] {
+            margin-top: 5px; /* Add 5px top margin */
+}
+
+.e3000_17 {
+	position: relative;
+	left: 27px;
+	top: -354px;
+}
+
+.e3000_18 {
+	position: relative;
+	left: -2px;
+	top: -355px;
+}
+
+.e3000_18 input {
+	padding: 10px;
+	width: 200px;
+	border-radius: 8px;
+	outline: gray;
+	border: 2px solid #b6b6b6;
+}
+
+.e3000_18 input:hover {
+	border-color: orange; /* 마우스 호버 시 테두리 색상 변경 */
+}
+
+.e3000_18 b {
+            color: gray; /* Change the text color to gray */
+}
+
+.e3000_18 input[type="text"] {
+            margin-top: 5px; /* Add 5px top margin */
+}
+
+.e3000_19 {
+	position: relative;
+	left: 248px;
+	top: -418.5px;
+}
+
+.e3000_19 input {
+	padding: 10px;
+	width: 200px;
+	border-radius: 8px;
+	outline: gray;
+	border: 2px solid #b6b6b6;
+}
+
+.e3000_19 input:hover {
+	border-color: orange; /* 마우스 호버 시 테두리 색상 변경 */
+}
+
+.e3000_19 b {
+            color: gray; /* Change the text color to gray */
+}
+
+.e3000_19 input[type="text"] {
+            margin-top: 5px; /* Add 5px top margin */
+}
+
+.e3000_20 {
+	position: relative;
+	left: 496px;
+	top: -481.9px;
+}
+
+.e3000_20 input {
+	padding: 10px;
+	width: 200px;
+	border-radius: 8px;
+	outline: gray;
+	border: 2px solid #b6b6b6;
+}
+
+.e3000_20 input:hover {
+	border-color: orange; /* 마우스 호버 시 테두리 색상 변경 */
+}
+
+.e3000_20 b {
+            color: gray; /* Change the text color to gray */
+}
+
+.e3000_20 input[type="text"] {
+            margin-top: 5px; /* Add 5px top margin */
+}
+
+.e3000_21 {
+	position: relative;
+	left: 100px;
+	top: 740px;
+}
+
+.e3000_22 {
+	position: relative;
+	left: 100px;
+	top: 748px;
+}
+
+.e3000_23 {
+	position: relative;
+	left: 100px;
+	top: 754px;
+}
+
+.e3000_24 {
+	position: relative;
+	left: 100px;
+	top: 764px;
+}
+
+.e3000_25 {
+	position: relative;
+	left: 948px;
+	top: 478px;
+}
+
+.insert_photo {
+	font-size: 16px;
+	padding: 10px 20px; /* 내용과 경계 사이 여백 조절 */
+	background-color: #ff9900; /* 배경색 설정 (오렌지색) */
+	color: #fff; /* 글자색 설정 (흰색) */
+	border: none; /* 테두리 없애기 */
+	border-radius: 10px; /* 모서리를 둥글게 조절 */
+	box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* 그림자 효과 추가 */
+	cursor: pointer; /* 마우스 커서를 포인터로 변경 */
+	font-weight: bold;
+}
+
+.e3004 {
+    width: 30px;
+    height: 30px;
+    position: relative;
+    background-image: url(../images/admin/admin08.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    left: -34px;
+    top: 40px;
+}
+
+.e3000_26 {
+    position: relative;
+    left: 1029px;
+    top: -739px;
+    width: 100px;
+    height: 1px;
+}
+
+.e3000_99 {
+    position: relative;
+    left: 1162px;
+    top: -1px;
+}
+
+.e3005 {
+	position: relative;
+	left: -3px;
+	top: -97px;
+}
+
+.preview-image {
+	max-width: 200px; /* 원하는 최대 너비로 조정 */
+	max-height: 200px; /* 원하는 최대 높이로 조정 */
+	display: block;
+	margin: 10px 0;
+}
+.btn-upload {
+  width: 150px;
+  height: 30px;
+  background: #fff;
+  border: 1px solid rgb(77,77,77);
+  border-radius: 10px;
+  font-weight: 500;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  &:hover {
+    background: #ff9900;
+    color: #fff;
+  }
+}
+
+ .e3000_22 input[type="file"] {
+        display: none;
+    }
+ .e3000_23 input[type="file"] {
+        display: none;
+    }
+ .e3000_24 input[type="file"] {
+        display: none;
+    }
+#file {
+  display: none;
+}
+
+.sales {
+	color: rgba(255, 255, 255, 1);
+	width: max-content;
+	height: 16px;
+	position: absolute;
+	left: 80px;
+	top: 590px;
+	text-align: center;
+	font-size: 16px;
+	letter-spacing: 2;
+	cursor: pointer;
+}
+
+.e3000_99 {
+    position: relative;
+    left: 248px;
+    top: -711px;
+}
+.e3000_99 select {
+	padding: 10px;
+	width: 200px;
+	border-radius: 8px;
+	outline: gray;
+	border: 2px solid #b6b6b6;
+}
+
+.e3000_99 select:hover {
+	border-color: orange; /* 마우스 호버 시 테두리 색상 변경 */
+}
+
+.e3000_99 b {
+	margin-bottom: 10px;
+    color: gray; /* Change the text color to gray */
+}
